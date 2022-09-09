@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Kalle Hoikkala",
+    "number": "{{$randomInt 2000000 99999999}}"
+}

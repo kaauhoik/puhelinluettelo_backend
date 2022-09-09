@@ -1,0 +1,27 @@
+{
+  "name": "puhelinluettelo_backend",
+  "version": "1.0.0",
+  "description": "backend puhelinluettelolle",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaauhoik/puhelinluettelo_backend.git"
+  },
+  "author": "Kalle Hoikkala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaauhoik/puhelinluettelo_backend/issues"
+  },
+  "homepage": "https://github.com/kaauhoik/puhelinluettelo_backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
