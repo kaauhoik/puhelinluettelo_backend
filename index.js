@@ -1,8 +1,20 @@
 const { json, request, response } = require('express')
 const express = require('express')
-const app = express()
+const morgan = require('morgan')
+const rl = require("./middlewares")
 
+const app = express()
 app.use(express.json())
+//app.use(rl.requestLogger)
+//app.use(rl.unknownEndpoint)
+morgan.token('body', function (req) {
+    if (req.method === "POST"){
+        return JSON.stringify(req.body)
+    }
+    return ""
+  })
+
+app.use(morgan(':method :url :status: :res[content-length] - :response-time ms :body'))
 
 let persons = [
     {
